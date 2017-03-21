@@ -1,0 +1,14 @@
+use_frameworks!
+target ‘Popong’ do
+    pod 'React', :path => '../node_modules/react-native', :subspecs =>      [
+    'Core',
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket',# needed for debugging
+    'RCTText',
+    'RCTImage'
+    ]
+    # 如果你的RN版本 >= 0.42.0，请加入下面这行
+    pod "Yoga", :path => "../node_modules/react-native/ReactCommon/yoga"
+#    pod 'JZNavigationExtension'
+end
